@@ -5,9 +5,7 @@ hosts as(
     select * from  {{ ref('stg_hosts')}}    
 )
 select l.Listing_id,
-       l.Listing_url,
        l.Name,
-       l.room_type,
        l.minimum_nights,
        l.host_id,
        l.price,
